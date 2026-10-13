@@ -78,7 +78,7 @@ h2 { font-size: clamp(2rem, 4.4vw, 3.25rem); line-height: 1.08; font-weight: 700
 
 /* ── Portada ─────────────────────────────────────── */
 .portada { padding-block: 28px 96px; }
-.logotipo { width: 100%; height: auto; color: var(--oliva-osc); overflow: visible; }
+.logotipo { display: block; width: 100%; height: auto; max-height: max(200px, 34vh); color: var(--oliva-osc); overflow: visible; }
 .logotipo path { transform-box: fill-box; }
 .logotipo path { fill: currentColor; }
 @media (prefers-reduced-motion: no-preference) {
@@ -88,14 +88,14 @@ h2 { font-size: clamp(2rem, 4.4vw, 3.25rem); line-height: 1.08; font-weight: 700
   .logotipo .l5 { animation-delay: .37s; } .logotipo .l6 { animation-delay: .45s; }
   @keyframes subir { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
 }
-.portada-cuerpo { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: 56px; align-items: start; margin-top: 40px; }
+.portada-cuerpo { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 56px; align-items: start; margin-top: clamp(24px, 4vh, 48px); }
 .portada-texto { display: flex; flex-direction: column; gap: 24px; padding-top: 12px; }
 .titulo-marca { margin: 0; line-height: 0; }
-.lema { font-size: clamp(2.1rem, 4.2vw, 3.4rem); line-height: 1.08; font-weight: 700; letter-spacing: -.03em; max-width: 13em; }
+.lema { font-size: clamp(2.1rem, 3.6vw, 3.1rem); line-height: 1.08; font-weight: 700; letter-spacing: -.03em; max-width: 13em; }
 .portada .bajada { font-size: 18px; }
 .botones { display: flex; flex-wrap: wrap; gap: 12px; }
-.foto-portada { margin: -9% 0 0; position: relative; }
-.foto-portada img { width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; object-position: center 45%; border-radius: 32px; }
+.foto-portada { margin: 0; position: relative; }
+.foto-portada img { width: 100%; height: auto; max-height: max(420px, 74vh); aspect-ratio: 4 / 5; object-fit: cover; object-position: center 45%; border-radius: 32px; }
 .portada-texto .cartel { align-self: flex-start; }
 .foto-portada figcaption { position: absolute; left: 20px; bottom: 20px; background: var(--papel); color: var(--tinta); font-size: 14px; font-weight: 500; padding: 6px 14px; border-radius: 999px; }
 @media (max-width: 860px) {
