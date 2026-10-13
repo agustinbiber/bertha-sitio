@@ -27,12 +27,12 @@ Antes de cambiar los DNS a Cloudflare: verificar que estén copiados los registr
 
 ## Cómo actualizar
 
-- **Precios y productos del menú:** en `index.html`, sección `id="menu"`; cada producto es una línea `<li>`.
-- **Horarios:** aparecen en tres lugares de `index.html` (portada, Visitanos y el bloque de datos estructurados `application/ld+json`).
+- **Precios y productos del menú:** en `index.html`, sección `id="menu"`; cada producto es una línea `<li>`. Las pestañas son Café, Otras bebidas, Salado y Dulce.
+- **Horarios:** en `index.html` están en cuatro lugares: la tabla de Visitanos, el pie, el bloque `application/ld+json` y la constante `HORARIO` del script del final (la que maneja el cartel "Abierto / Cerrado").
 - **Fotos nuevas:** guardar en `img/` en `.webp` y `.jpg`, de 800 y 1200 px de ancho.
 
 ## Pendiente
 
 - Número de WhatsApp para mayoristas (hoy el botón abre un mensaje por Instagram).
-- Domingos: confirmar si abren.
+- Domingos: confirmar si abren (hoy el cartel dice "Cerrado" los domingos).
 - Más fotos (local, café, buns).
