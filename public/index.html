@@ -28,7 +28,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="/img/jala-1200.webp" imagesrcset="/img/jala-800.webp 800w, /img/jala-1200.webp 1200w" imagesizes="(max-width: 860px) 100vw, 600px">
-<link rel="stylesheet" href="/estilos.css?v=2026101305">
+<link rel="stylesheet" href="/estilos.css?v=2026101306">
 <script>document.documentElement.classList.add('js');</script>
 
 <script type="application/ld+json">
@@ -69,6 +69,7 @@
       <a href="#menu">Menú</a>
       <a href="#mayoristas">Mayoristas</a>
       <a href="#visitanos">Visitanos</a>
+      <a class="pedir" href="https://wa.me/59898092333">Pedir por WhatsApp</a>
     </div>
   </nav>
 </header>
@@ -91,12 +92,25 @@
           <a class="boton contorno" href="#visitanos">Cómo llegar</a>
         </div>
       </div>
-      <figure class="foto-portada">
-        <picture>
+      <figure class="foto-portada" id="carrusel">
+        <picture class="capa activa" data-titulo="Nuestro jalá">
           <source type="image/webp" srcset="/img/jala-800.webp 800w, /img/jala-1200.webp 1200w" sizes="(max-width: 860px) 100vw, 600px">
           <img src="/img/jala-1200.jpg" srcset="/img/jala-800.jpg 800w, /img/jala-1200.jpg 1200w" sizes="(max-width: 860px) 100vw, 600px" width="1200" height="1600" alt="Pan jalá trenzado con sésamo negro sobre una tabla de madera grabada con el nombre Bertha" fetchpriority="high">
         </picture>
-        <figcaption>Nuestro jalá</figcaption>
+        <picture class="capa" data-titulo="El local" aria-hidden="true">
+          <source type="image/webp" srcset="/img/g-local-600.webp 600w, /img/g-local-1000.webp 1000w" sizes="(max-width: 860px) 100vw, 600px">
+          <img src="/img/g-local-1000.jpg" srcset="/img/g-local-600.jpg 600w, /img/g-local-1000.jpg 1000w" sizes="(max-width: 860px) 100vw, 600px" width="1000" height="1250" alt="Mesa de desayuno frente a la vidriera de Bertha: café, jugos, croissants y un tostado" decoding="async" fetchpriority="low">
+        </picture>
+        <picture class="capa" data-titulo="Café de especialidad" aria-hidden="true">
+          <source type="image/webp" srcset="/img/g-latte-600.webp 600w, /img/g-latte-1000.webp 1000w" sizes="(max-width: 860px) 100vw, 600px">
+          <img src="/img/g-latte-1000.jpg" srcset="/img/g-latte-600.jpg 600w, /img/g-latte-1000.jpg 1000w" sizes="(max-width: 860px) 100vw, 600px" width="1000" height="1250" alt="Latte con arte de corazón en taza blanca" decoding="async" fetchpriority="low">
+        </picture>
+        <picture class="capa" data-titulo="Pan de campo" aria-hidden="true">
+          <source type="image/webp" srcset="/img/g-campo-600.webp 600w, /img/g-campo-1000.webp 1000w" sizes="(max-width: 860px) 100vw, 600px">
+          <img src="/img/g-campo-1000.jpg" srcset="/img/g-campo-600.jpg 600w, /img/g-campo-1000.jpg 1000w" sizes="(max-width: 860px) 100vw, 600px" width="1000" height="1250" alt="Hogaza de pan de campo de masa madre sobre madera" decoding="async" fetchpriority="low">
+        </picture>
+        <figcaption><span id="carrusel-titulo">Nuestro jalá</span></figcaption>
+        <div class="puntos" hidden><button type="button" aria-label="Ver foto 1: Nuestro jalá" aria-current="true"><span></span></button><button type="button" aria-label="Ver foto 2: El local"><span></span></button><button type="button" aria-label="Ver foto 3: Café de especialidad"><span></span></button><button type="button" aria-label="Ver foto 4: Pan de campo"><span></span></button></div>
       </figure>
     </div>
   </div>
@@ -134,55 +148,74 @@
   </div>
 </section>
 
-<section id="galeria" class="galeria" aria-labelledby="galeria-titulo">
-  <div class="contenedor">
-    <h2 id="galeria-titulo">Así es Bertha</h2>
-    <p class="bajada">Pan, café y el local de Benito Lamas. Más en <a href="https://www.instagram.com/bertha_uy/">@bertha_uy</a>.</p>
-    <ul class="fotos">
-      <li><figure>
-        <picture>
-          <source type="image/webp" srcset="/img/g-local-600.webp 600w, /img/g-local-1000.webp 1000w" sizes="(max-width: 860px) 50vw, 380px">
-          <img src="/img/g-local-1000.jpg" srcset="/img/g-local-600.jpg 600w, /img/g-local-1000.jpg 1000w" sizes="(max-width: 860px) 50vw, 380px" width="1000" height="1250" loading="lazy" decoding="async" alt="Mesa de desayuno frente a la vidriera de Bertha: café, jugos de naranja, croissants y un tostado">
-        </picture>
-        <figcaption>El local</figcaption>
-      </figure></li>
-      <li><figure>
-        <picture>
-          <source type="image/webp" srcset="/img/g-latte-600.webp 600w, /img/g-latte-1000.webp 1000w" sizes="(max-width: 860px) 50vw, 380px">
-          <img src="/img/g-latte-1000.jpg" srcset="/img/g-latte-600.jpg 600w, /img/g-latte-1000.jpg 1000w" sizes="(max-width: 860px) 50vw, 380px" width="1000" height="1250" loading="lazy" decoding="async" alt="Latte con arte de corazón en taza blanca">
-        </picture>
-        <figcaption>Café de especialidad</figcaption>
-      </figure></li>
-      <li><figure>
-        <picture>
-          <source type="image/webp" srcset="/img/g-campo-600.webp 600w, /img/g-campo-1000.webp 1000w" sizes="(max-width: 860px) 50vw, 380px">
-          <img src="/img/g-campo-1000.jpg" srcset="/img/g-campo-600.jpg 600w, /img/g-campo-1000.jpg 1000w" sizes="(max-width: 860px) 50vw, 380px" width="1000" height="1250" loading="lazy" decoding="async" alt="Hogaza de pan de campo de masa madre sobre madera">
-        </picture>
-        <figcaption>Pan de campo</figcaption>
-      </figure></li>
-      <li><figure>
-        <picture>
-          <source type="image/webp" srcset="/img/g-jala-chocolate-600.webp 600w, /img/g-jala-chocolate-1000.webp 1000w" sizes="(max-width: 860px) 50vw, 380px">
-          <img src="/img/g-jala-chocolate-1000.jpg" srcset="/img/g-jala-chocolate-600.jpg 600w, /img/g-jala-chocolate-1000.jpg 1000w" sizes="(max-width: 860px) 50vw, 380px" width="1000" height="1250" loading="lazy" decoding="async" alt="Jalá relleno de chocolate cortado al medio sobre la tabla de Bertha">
-        </picture>
-        <figcaption>Jalá de chocolate</figcaption>
-      </figure></li>
-      <li><figure>
-        <picture>
-          <source type="image/webp" srcset="/img/g-sandwich-600.webp 600w, /img/g-sandwich-1000.webp 1000w" sizes="(max-width: 860px) 50vw, 380px">
-          <img src="/img/g-sandwich-1000.jpg" srcset="/img/g-sandwich-600.jpg 600w, /img/g-sandwich-1000.jpg 1000w" sizes="(max-width: 860px) 50vw, 380px" width="1000" height="1250" loading="lazy" decoding="async" alt="Sándwich de jamón y tomates asados en focaccia, con azucarera y taza de fondo">
-        </picture>
-        <figcaption>Sándwiches</figcaption>
-      </figure></li>
-      <li><figure>
-        <picture>
-          <source type="image/webp" srcset="/img/g-hogaza-600.webp 600w, /img/g-hogaza-1000.webp 1000w" sizes="(max-width: 860px) 50vw, 380px">
-          <img src="/img/g-hogaza-1000.jpg" srcset="/img/g-hogaza-600.jpg 600w, /img/g-hogaza-1000.jpg 1000w" sizes="(max-width: 860px) 50vw, 380px" width="1000" height="1250" loading="lazy" decoding="async" alt="Hogaza de masa madre junto a espigas de trigo y un café">
-        </picture>
-        <figcaption>Recién horneado</figcaption>
-      </figure></li>
-    </ul>
+<section id="vitrina" class="vitrina" aria-labelledby="vitrina-titulo">
+  <div class="contenedor vitrina-cabecera">
+    <div>
+      <h2 id="vitrina-titulo">La vitrina</h2>
+      <p class="bajada">Pan, café y el local de Benito Lamas.</p>
+    </div>
+    <div class="flechas" hidden>
+      <button type="button" class="flecha" data-dir="-1" aria-label="Anterior" aria-controls="tira"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <button type="button" class="flecha" data-dir="1" aria-label="Siguiente" aria-controls="tira"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+    </div>
   </div>
+  <ul class="tira" id="tira" tabindex="0" aria-label="Fotos de Bertha, deslizá para ver más">
+      <li class="pieza">
+        <picture>
+          <source type="image/webp" srcset="/img/g-local-600.webp 600w, /img/g-local-1000.webp 1000w" sizes="(max-width: 860px) 78vw, 380px">
+          <img src="/img/g-local-1000.jpg" srcset="/img/g-local-600.jpg 600w, /img/g-local-1000.jpg 1000w" sizes="(max-width: 860px) 78vw, 380px" width="1000" height="1250" loading="lazy" decoding="async" alt="Mesa de desayuno frente a la vidriera de Bertha: café, jugos, croissants y un tostado" draggable="false">
+        </picture>
+        <h3>El local</h3>
+        <p>Benito Lamas 2864. Vení a desayunar o a merendar.</p>
+      </li>
+      <li class="pieza">
+        <picture>
+          <source type="image/webp" srcset="/img/g-latte-600.webp 600w, /img/g-latte-1000.webp 1000w" sizes="(max-width: 860px) 78vw, 380px">
+          <img src="/img/g-latte-1000.jpg" srcset="/img/g-latte-600.jpg 600w, /img/g-latte-1000.jpg 1000w" sizes="(max-width: 860px) 78vw, 380px" width="1000" height="1250" loading="lazy" decoding="async" alt="Latte con arte de corazón en taza blanca" draggable="false">
+        </picture>
+        <h3>Café de especialidad</h3>
+        <p>Espresso, flat white, latte y cafés fríos.</p>
+      </li>
+      <li class="pieza">
+        <picture>
+          <source type="image/webp" srcset="/img/g-campo-600.webp 600w, /img/g-campo-1000.webp 1000w" sizes="(max-width: 860px) 78vw, 380px">
+          <img src="/img/g-campo-1000.jpg" srcset="/img/g-campo-600.jpg 600w, /img/g-campo-1000.jpg 1000w" sizes="(max-width: 860px) 78vw, 380px" width="1000" height="1250" loading="lazy" decoding="async" alt="Hogaza de pan de campo de masa madre sobre madera" draggable="false">
+        </picture>
+        <h3>Pan de campo</h3>
+        <p>Masa madre, blanco o integral.</p>
+      </li>
+      <li class="pieza">
+        <picture>
+          <source type="image/webp" srcset="/img/g-jala-chocolate-600.webp 600w, /img/g-jala-chocolate-1000.webp 1000w" sizes="(max-width: 860px) 78vw, 380px">
+          <img src="/img/g-jala-chocolate-1000.jpg" srcset="/img/g-jala-chocolate-600.jpg 600w, /img/g-jala-chocolate-1000.jpg 1000w" sizes="(max-width: 860px) 78vw, 380px" width="1000" height="1250" loading="lazy" decoding="async" alt="Jalá relleno de chocolate cortado al medio sobre la tabla de Bertha" draggable="false">
+        </picture>
+        <h3>Jalá de chocolate</h3>
+        <p>Trenzado, con mucho chocolate adentro.</p>
+      </li>
+      <li class="pieza">
+        <picture>
+          <source type="image/webp" srcset="/img/g-sandwich-600.webp 600w, /img/g-sandwich-1000.webp 1000w" sizes="(max-width: 860px) 78vw, 380px">
+          <img src="/img/g-sandwich-1000.jpg" srcset="/img/g-sandwich-600.jpg 600w, /img/g-sandwich-1000.jpg 1000w" sizes="(max-width: 860px) 78vw, 380px" width="1000" height="1250" loading="lazy" decoding="async" alt="Sándwich de jamón y tomates asados en focaccia" draggable="false">
+        </picture>
+        <h3>Sándwiches</h3>
+        <p>En focaccia y panes de la casa.</p>
+      </li>
+      <li class="pieza">
+        <picture>
+          <source type="image/webp" srcset="/img/g-hogaza-600.webp 600w, /img/g-hogaza-1000.webp 1000w" sizes="(max-width: 860px) 78vw, 380px">
+          <img src="/img/g-hogaza-1000.jpg" srcset="/img/g-hogaza-600.jpg 600w, /img/g-hogaza-1000.jpg 1000w" sizes="(max-width: 860px) 78vw, 380px" width="1000" height="1250" loading="lazy" decoding="async" alt="Hogaza de masa madre junto a espigas de trigo y un café" draggable="false">
+        </picture>
+        <h3>Recién horneado</h3>
+        <p>Todos los días, desde las 8.</p>
+      </li>
+      <li class="pieza pieza-final">
+        <a href="https://www.instagram.com/bertha_uy/">
+          <span class="final-titulo">Lo que sale hoy del horno lo subimos a Instagram</span>
+          <span class="final-cuenta">@bertha_uy</span>
+        </a>
+      </li>
+  </ul>
+  <div class="contenedor"><div class="avance" aria-hidden="true"><span id="avance"></span></div></div>
 </section>
 
 <section id="menu" class="menu">
@@ -193,6 +226,7 @@
     </div>
 
     <div class="pestanas" role="tablist" aria-label="Categorías del menú" hidden>
+      <span class="indicador" aria-hidden="true"></span>
       <button role="tab" id="tab-cafe" aria-controls="p-cafe" aria-selected="true">Café</button>
       <button role="tab" id="tab-bebidas" aria-controls="p-bebidas" aria-selected="false" tabindex="-1">Otras bebidas</button>
       <button role="tab" id="tab-salado" aria-controls="p-salado" aria-selected="false" tabindex="-1">Salado</button>
@@ -387,6 +421,8 @@
 
 </main>
 
+<a class="flotante" id="flotante" href="https://wa.me/59898092333"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 0 0-7.4 12.7L3.5 20.5l4.4-1.1A8.5 8.5 0 1 0 12 3.5z"/></svg>Pedir por WhatsApp</a>
+
 <footer class="pie">
   <div class="contenedor">
     <img src="/img/logo.png" width="900" height="714" loading="lazy" alt="Bertha, almacén de pan, desde 2020">
@@ -471,6 +507,14 @@
         document.getElementById(t.getAttribute('aria-controls')).hidden = !sel;
       });
       if (foco) tab.focus();
+      mover(tab);
+    }
+    function mover(tab) {
+      var ind = lista.querySelector('.indicador');
+      if (!ind || !tab) return;
+      ind.style.width = tab.offsetWidth + 'px';
+      ind.style.height = tab.offsetHeight + 'px';
+      ind.style.transform = 'translate(' + tab.offsetLeft + 'px,' + tab.offsetTop + 'px)';
     }
     tabs.forEach(function (t, i) {
       t.addEventListener('click', function () { elegir(t); });
@@ -481,6 +525,7 @@
     });
     lista.hidden = false;
     elegir(tabs[0]);
+    window.addEventListener('resize', function () { mover(tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0]); });
   }
 
   function bordeEncabezado() {
@@ -489,6 +534,100 @@
     f(); window.addEventListener('scroll', f, { passive: true });
   }
 
+
+  var reducir = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Portada: fotos que rotan
+  function carrusel() {
+    var fig = document.getElementById('carrusel');
+    if (!fig) return;
+    var capas = fig.querySelectorAll('.capa'), puntos = fig.querySelectorAll('.puntos button');
+    var titulo = document.getElementById('carrusel-titulo'), i = 0, timer = null, pausa = false;
+    var DUR = 5000;
+    fig.style.setProperty('--dur', DUR + 'ms');
+    function ir(n) {
+      capas[i].classList.remove('activa'); capas[i].setAttribute('aria-hidden', 'true');
+      puntos[i].removeAttribute('aria-current');
+      i = (n + capas.length) % capas.length;
+      capas[i].classList.add('activa'); capas[i].removeAttribute('aria-hidden');
+      puntos[i].setAttribute('aria-current', 'true');
+      titulo.textContent = capas[i].dataset.titulo;
+      programar();
+    }
+    function programar() {
+      clearTimeout(timer);
+      fig.classList.remove('corriendo'); void fig.offsetWidth;
+      if (reducir || pausa) return;
+      fig.classList.add('corriendo');
+      timer = setTimeout(function () { ir(i + 1); }, DUR);
+    }
+    puntos.forEach(function (b, n) { b.addEventListener('click', function () { ir(n); }); });
+    fig.addEventListener('mouseenter', function () { pausa = true; programar(); });
+    fig.addEventListener('mouseleave', function () { pausa = false; programar(); });
+    fig.addEventListener('focusin', function () { pausa = true; programar(); });
+    fig.addEventListener('focusout', function () { pausa = false; programar(); });
+    document.addEventListener('visibilitychange', function () { pausa = document.hidden; programar(); });
+    fig.querySelector('.puntos').hidden = false;
+    programar();
+  }
+
+  // Vitrina: flechas, arrastre y barra de avance
+  function vitrina() {
+    var tira = document.getElementById('tira'), barra = document.getElementById('avance');
+    if (!tira) return;
+    var flechas = document.querySelector('.flechas');
+    function paso() { var p = tira.querySelector('.pieza'); return p ? p.offsetWidth + 20 : 300; }
+    function actualizar() {
+      var max = tira.scrollWidth - tira.clientWidth, x = tira.scrollLeft;
+      var vis = tira.clientWidth / tira.scrollWidth;
+      barra.style.width = (vis * 100) + '%';
+      barra.style.transform = 'translateX(' + (max > 0 ? (x / max) * (1 / vis - 1) * 100 : 0) + '%)';
+      flechas.querySelector('[data-dir="-1"]').disabled = x <= 2;
+      flechas.querySelector('[data-dir="1"]').disabled = x >= max - 2;
+    }
+    flechas.hidden = false;
+    flechas.querySelectorAll('button').forEach(function (b) {
+      b.addEventListener('click', function () { tira.scrollBy({ left: paso() * +b.dataset.dir, behavior: reducir ? 'auto' : 'smooth' }); });
+    });
+    tira.addEventListener('scroll', actualizar, { passive: true });
+    window.addEventListener('resize', actualizar);
+    // Arrastrar con el mouse (en pantallas táctiles se desliza solo)
+    var arrastre = null;
+    tira.addEventListener('pointerdown', function (e) {
+      if (e.pointerType !== 'mouse' || e.target.closest('a')) return;
+      arrastre = { x: e.clientX, s: tira.scrollLeft, movio: false };
+      tira.classList.add('arrastrando');
+    });
+    window.addEventListener('pointermove', function (e) {
+      if (!arrastre) return;
+      var d = e.clientX - arrastre.x;
+      if (Math.abs(d) > 3) arrastre.movio = true;
+      tira.scrollLeft = arrastre.s - d;
+    });
+    window.addEventListener('pointerup', function () {
+      if (!arrastre) return;
+      arrastre = null; tira.classList.remove('arrastrando');
+    });
+    actualizar();
+  }
+
+  // Botón flotante (celular): aparece después de la portada
+  function flotante() {
+    var b = document.getElementById('flotante');
+    if (!b || !('IntersectionObserver' in window)) return;
+    // Se oculta sobre la portada, el menú (no tapa precios) y donde ya hay un botón de WhatsApp.
+    var ocultan = ['inicio', 'menu', 'mayoristas', 'visitanos'].map(function (id) { return document.getElementById(id); }).filter(Boolean);
+    var visibles = {};
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { visibles[e.target.id] = e.isIntersecting; });
+      b.classList.toggle('visible', !Object.keys(visibles).some(function (k) { return visibles[k]; }));
+    }, { threshold: 0, rootMargin: '-15% 0px -15% 0px' });
+    ocultan.forEach(function (el) { io.observe(el); });
+  }
+
+  carrusel();
+  vitrina();
+  flotante();
   try { actualizarCartel(); marcarHoy(); avisoCierres(); setInterval(actualizarCartel, 60000); } catch (e) {}
   pestanas();
   bordeEncabezado();
