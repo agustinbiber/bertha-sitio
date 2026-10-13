@@ -244,7 +244,7 @@ h2 { font-size: clamp(2rem, 4.4vw, 3.25rem); line-height: 1.08; font-weight: 700
 .pieza-final { align-self: flex-start; }
 .pieza-final a:hover { background: var(--tinta); color: var(--salvia); }
 .final-titulo { font-size: clamp(1.5rem, 2.3vw, 1.9rem); font-weight: 600; line-height: 1.2; letter-spacing: -.015em; }
-.final-cuenta { font-size: 17px; font-weight: 500; text-decoration: underline; text-underline-offset: 4px; }
+.final-cuenta { font-size: 17px; font-weight: 500; }
 .avance { height: 3px; border-radius: 3px; background: var(--linea); margin-top: 28px; overflow: hidden; }
 .avance span { display: block; height: 100%; width: 30%; border-radius: 3px; background: var(--oliva-osc); }
 @media (max-width: 860px) {
