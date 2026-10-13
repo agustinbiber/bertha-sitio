@@ -1,4 +1,4 @@
-# Cabeceras para Cloudflare Pages
+# Cabeceras para Cloudflare (archivos estáticos)
 /*
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
@@ -8,5 +8,3 @@
 /img/*
   Cache-Control: public, max-age=2592000
 
-/estilos.css
-  Cache-Control: public, max-age=3600

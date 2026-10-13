@@ -26,6 +26,7 @@ Dominio (pendiente):
 
 - **Precios y productos del menú:** en `public/index.html`, sección `id="menu"`; cada producto es una línea `<li>`. Las pestañas son Café, Otras bebidas, Salado y Dulce.
 - **Horarios:** en `public/index.html` están en cuatro lugares: la tabla de Visitanos, el pie, el bloque `application/ld+json` y la constante `HORARIO` del script del final (la que maneja el cartel "Abierto / Cerrado").
+- **Cambios de diseño (`estilos.css`):** subir el número de `?v=` en el `<link>` de `index.html` y `404.html`, así los celulares descargan la versión nueva.
 - **Fotos nuevas:** guardar en `public/img/` en `.webp` y `.jpg`, de 800 y 1200 px de ancho.
 
 ## Pendiente
