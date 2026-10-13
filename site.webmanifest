@@ -1,0 +1,12 @@
+{
+  "name": "Bertha · Almacén de pan",
+  "short_name": "Bertha",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#EDEFE4",
+  "theme_color": "#4A5230",
+  "icons": [
+    { "src": "/img/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "/img/icono-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

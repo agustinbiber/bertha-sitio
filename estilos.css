@@ -1,0 +1,137 @@
+/* Bertha · web pública */
+:root {
+  --oliva: #70774E;
+  --oliva-osc: #4A5230;
+  --tinta: #2E3320;
+  --texto: #3E4429;
+  --suave: #5A6040;
+  --fondo: #EDEFE4;
+  --blanco: #FFFFFF;
+  --linea: #E3E6D6;
+  --borde: #D6D9C8;
+  --radio: 24px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 88px; -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0;
+  font-family: 'Poppins', system-ui, sans-serif;
+  color: var(--tinta);
+  background: var(--fondo);
+  line-height: 1.5;
+}
+img { max-width: 100%; display: block; }
+a { color: var(--oliva-osc); }
+a:hover { color: var(--tinta); }
+h1, h2, h3, p { margin: 0; }
+:focus-visible { outline: 3px solid var(--oliva-osc); outline-offset: 3px; border-radius: 6px; }
+
+.saltar { position: absolute; left: -9999px; top: 8px; background: var(--oliva-osc); color: #fff; padding: 10px 16px; border-radius: 8px; z-index: 100; }
+.saltar:focus { left: 8px; }
+
+.contenedor { max-width: 1200px; margin: 0 auto; padding-inline: 24px; }
+.seccion { padding-block: 88px; }
+.blanco { background: var(--blanco); }
+
+.etiqueta { font-size: 14px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--oliva-osc); }
+.titulo { font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; letter-spacing: -.02em; line-height: 1.1; }
+.bajada { font-size: 17px; line-height: 1.6; color: var(--texto); }
+
+.boton { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 14px 28px; border-radius: 999px; font-weight: 600; font-size: 16px; text-decoration: none; background: var(--oliva-osc); color: var(--fondo); border: 2px solid var(--oliva-osc); transition: background .15s, color .15s; }
+.boton:hover { background: var(--tinta); border-color: var(--tinta); color: var(--fondo); }
+.boton.contorno { background: transparent; color: var(--oliva-osc); }
+.boton.contorno:hover { background: var(--oliva-osc); color: var(--fondo); }
+
+/* Encabezado */
+.encabezado { position: sticky; top: 0; z-index: 50; background: rgba(237, 239, 228, .94); backdrop-filter: saturate(1.4) blur(8px); -webkit-backdrop-filter: saturate(1.4) blur(8px); border-bottom: 1px solid var(--borde); }
+.nav { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px; padding-block: 12px; }
+.marca { display: flex; align-items: center; gap: 14px; text-decoration: none; padding: 6px 0; }
+.marca svg { width: 104px; height: auto; }
+.marca span { font-size: 12px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--oliva-osc); }
+.enlaces { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 22px; font-size: 15px; font-weight: 500; }
+.enlaces a { text-decoration: none; padding: 10px 0; }
+.enlaces .ig { background: var(--oliva-osc); color: #fff; padding: 10px 18px; border-radius: 999px; }
+.enlaces .ig:hover { background: var(--tinta); color: #fff; }
+@media (max-width: 640px) {
+  .encabezado { position: static; }
+  .marca span { display: none; }
+  .enlaces { gap: 2px 16px; font-size: 14px; }
+  .enlaces .ig { display: none; }
+}
+
+/* Portada */
+.portada { display: flex; flex-wrap: wrap; align-items: center; gap: 48px; padding-block: 64px 80px; }
+.portada-texto { flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 22px; }
+.portada h1 { font-size: clamp(2.5rem, 5.2vw, 4.2rem); line-height: 1.02; font-weight: 700; letter-spacing: -.03em; }
+.portada .bajada { font-size: 18px; max-width: 520px; }
+.horario-corto { font-size: 15px; font-weight: 500; color: var(--oliva-osc); }
+.botones { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 4px; }
+.portada picture { flex: 1 1 420px; min-width: 0; }
+.portada img { width: 100%; height: min(34rem, 110vw); object-fit: cover; object-position: center 45%; border-radius: 28px; }
+
+/* Qué hacemos */
+.cabecera { display: flex; flex-direction: column; gap: 12px; max-width: 640px; margin-bottom: 40px; }
+.tarjetas { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
+.tarjeta { background: var(--fondo); border-radius: var(--radio); padding: 32px; display: flex; flex-direction: column; gap: 14px; }
+.tarjeta h3 { font-size: 22px; font-weight: 600; }
+.tarjeta p { font-size: 16px; line-height: 1.6; color: var(--texto); }
+
+/* Menú */
+.menu-cabecera { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 12px; margin-bottom: 32px; }
+.menu-cabecera p { font-size: 14px; color: var(--texto); }
+.menu-grilla { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; align-items: start; }
+.menu-col { display: flex; flex-direction: column; gap: 16px; }
+.categoria { background: var(--blanco); border-radius: var(--radio); padding: 8px 28px; }
+.categoria summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 18px 0; font-size: 20px; font-weight: 600; color: var(--oliva-osc); }
+.categoria summary::-webkit-details-marker { display: none; }
+.categoria summary::after { content: ""; width: 10px; height: 10px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(45deg) translateY(-3px); transition: transform .2s; flex: none; }
+.categoria[open] summary::after { transform: rotate(-135deg) translateY(-3px); }
+.categoria ul { margin: 0 0 16px; padding: 0; list-style: none; font-size: 15px; }
+.categoria li { display: flex; justify-content: space-between; gap: 16px; padding: 8px 0; border-bottom: 1px solid var(--linea); }
+.categoria li:last-child { border-bottom: 0; }
+.categoria li > span:first-child { min-width: 0; }
+.categoria li > span:last-child { font-weight: 600; white-space: nowrap; }
+.categoria .det { color: var(--suave); font-weight: 400; white-space: normal; }
+
+.promos { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-top: 24px; }
+.promo { background: var(--oliva-osc); color: #fff; border-radius: var(--radio); padding: 32px; display: flex; flex-direction: column; gap: 12px; }
+.promo-cab { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+.promo h3 { font-size: 22px; font-weight: 600; }
+.promo .precio { font-size: 22px; font-weight: 700; white-space: nowrap; }
+.promo p { font-size: 16px; line-height: 1.6; }
+
+/* Mayoristas */
+.mayoristas { background: var(--oliva); color: #fff; }
+.mayoristas .contenedor { display: flex; flex-wrap: wrap; align-items: center; gap: 48px; }
+.mayoristas-texto { flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 18px; }
+.mayoristas .etiqueta, .mayoristas .bajada { color: #fff; }
+.pasos { flex: 1 1 360px; min-width: 0; background: var(--fondo); color: var(--tinta); border-radius: var(--radio); padding: 32px; display: flex; flex-direction: column; gap: 18px; }
+.pasos h3 { font-size: 20px; font-weight: 600; }
+.pasos ol { margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 10px; font-size: 16px; color: var(--texto); }
+
+/* Visitanos */
+.visitanos { display: flex; flex-wrap: wrap; align-items: center; gap: 48px; }
+.datos { flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 28px; }
+.dato { display: flex; flex-direction: column; gap: 6px; }
+.dato .etiqueta { font-size: 13px; letter-spacing: .12em; }
+.dato p, .dato address { font-size: 19px; font-weight: 500; font-style: normal; }
+.dato a { font-size: 16px; font-weight: 500; padding: 6px 0; }
+.dato dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 4px 20px; font-size: 18px; }
+.dato dt { font-weight: 500; }
+.dato dd { margin: 0; }
+.logo-caja { flex: 1 1 420px; min-width: 0; background: var(--blanco); border-radius: 28px; display: flex; align-items: center; justify-content: center; padding: 48px 32px; }
+.logo-caja img { width: 100%; max-width: 400px; height: auto; }
+
+/* Pie */
+.pie { background: var(--tinta); color: var(--fondo); }
+.pie .contenedor { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 24px; padding-block: 36px; font-size: 14px; }
+.pie a { color: var(--fondo); }
+
+@media (max-width: 640px) {
+  .seccion { padding-block: 64px; }
+  .portada { padding-block: 32px 56px; gap: 32px; }
+  .tarjeta, .promo, .pasos { padding: 26px; }
+  .categoria { padding: 4px 22px; }
+}
