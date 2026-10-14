@@ -28,7 +28,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="/img/g-jala-arriba-1000.webp" imagesrcset="/img/g-jala-arriba-600.webp 600w, /img/g-jala-arriba-1000.webp 1000w" imagesizes="(max-width: 860px) 100vw, 600px">
-<link rel="stylesheet" href="/estilos.css?v=2026101317">
+<link rel="stylesheet" href="/estilos.css?v=2026101418">
 <script>document.documentElement.classList.add('js');</script>
 
 <script type="application/ld+json">
@@ -119,6 +119,29 @@
         <div class="puntos" hidden><button type="button" aria-label="Ver foto 1: Nuestro jalá" aria-current="true"><span></span></button><button type="button" aria-label="Ver foto 2: Café de especialidad"><span></span></button><button type="button" aria-label="Ver foto 3: Jalá de chocolate"><span></span></button><button type="button" aria-label="Ver foto 4: Pan de campo"><span></span></button><button type="button" aria-label="Ver foto 5: En Benito Lamas"><span></span></button></div>
       </figure>
     </div>
+  </div>
+</section>
+
+<section id="novedades" class="novedades" aria-labelledby="novedades-titulo">
+  <div class="contenedor">
+    <p class="antetitulo" id="novedades-titulo">Novedades</p>
+    <ul class="novedades-lista">
+      <li class="novedad">
+        <picture class="novedad-foto">
+          <source type="image/webp" srcset="/img/g-matcha-600.webp 600w, /img/g-matcha-1000.webp 1000w" sizes="(max-width: 860px) 100vw, 420px">
+          <img src="/img/g-matcha-1000.jpg" srcset="/img/g-matcha-600.jpg 600w, /img/g-matcha-1000.jpg 1000w" sizes="(max-width: 860px) 100vw, 420px" width="1000" height="1250" loading="lazy" decoding="async" alt="Matcha latte con arte de corazón en taza blanca, sostenido con las dos manos">
+        </picture>
+        <div class="novedad-texto">
+          <span class="nuevo">Nuevo</span>
+          <h2>Matcha latte</h2>
+          <p class="bajada">Té verde matcha batido con leche cremosa y espumada. Suave, un poco herbal y sin café: ideal para la tarde. También con leche vegetal.</p>
+          <div class="botones">
+            <a class="boton" href="https://wa.me/59898092333?text=Hola%2C%20quiero%20probar%20el%20matcha%20latte">Pedilo por WhatsApp</a>
+            <a class="boton contorno" href="#menu">Ver el menú</a>
+          </div>
+        </div>
+      </li>
+    </ul>
   </div>
 </section>
 
@@ -678,7 +701,7 @@
     var b = document.getElementById('flotante');
     if (!b || !('IntersectionObserver' in window)) return;
     // Se oculta sobre la portada, el menú (no tapa precios) y donde ya hay un botón de WhatsApp.
-    var ocultan = ['inicio', 'menu', 'mayoristas', 'visitanos'].map(function (id) { return document.getElementById(id); }).filter(Boolean);
+    var ocultan = ['inicio', 'novedades', 'menu', 'mayoristas', 'visitanos'].map(function (id) { return document.getElementById(id); }).filter(Boolean);
     var visibles = {};
     var io = new IntersectionObserver(function (es) {
       es.forEach(function (e) { visibles[e.target.id] = e.isIntersecting; });

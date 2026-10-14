@@ -129,6 +129,25 @@ h2 { font-size: clamp(2rem, 4.4vw, 3.25rem); line-height: 1.08; font-weight: 700
   .foto-portada img { object-position: var(--encuadre, center 42%); }
 }
 
+/* ── Novedades ───────────────────────────────────── */
+.novedades { background: var(--salvia); padding-block: 8px 96px; }
+.antetitulo { font-size: 13px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--oliva); margin-bottom: 18px; }
+.novedades-lista { list-style: none; margin: 0; padding: 0; display: grid; gap: 24px; }
+.novedad { display: grid; grid-template-columns: minmax(0, 420px) minmax(0, 1fr); align-items: center; gap: 48px; padding: 28px; border-radius: 32px; background: var(--papel); box-shadow: 0 1px 0 var(--linea); }
+.novedad-foto { display: block; border-radius: 22px; overflow: hidden; background: var(--salvia); }
+.novedad-foto img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: var(--encuadre, center 48%); max-height: 56vh; }
+.novedad-texto { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; padding-right: 24px; }
+.novedad-texto h2 { font-size: clamp(2rem, 4vw, 3rem); }
+.nuevo { display: inline-block; padding: 6px 14px; border-radius: 999px; background: var(--corteza); color: #fff; font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
+.novedad-texto .botones { margin-top: 8px; }
+@media (max-width: 860px) {
+  .novedades { padding-block: 0 64px; }
+  .novedad { grid-template-columns: 1fr; gap: 22px; padding: 16px 16px 26px; border-radius: 26px; }
+  .novedad-foto { border-radius: 18px; }
+  .novedad-foto img { aspect-ratio: 5 / 4; max-height: none; }
+  .novedad-texto { padding: 0 8px; gap: 12px; }
+}
+
 /* ── Qué hacemos ─────────────────────────────────── */
 .hacemos { background: var(--papel); padding-block: 104px; }
 .hacemos-grilla { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 64px; align-items: start; }
