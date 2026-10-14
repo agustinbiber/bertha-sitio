@@ -130,6 +130,8 @@ h2 { font-size: clamp(2rem, 4.4vw, 3.25rem); line-height: 1.08; font-weight: 700
 .hacemos { background: var(--papel); padding-block: 104px; }
 .hacemos-grilla { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 64px; align-items: start; }
 .hacemos-intro { display: flex; flex-direction: column; gap: 20px; position: sticky; top: 104px; }
+.hacemos-foto { display: block; margin-top: 12px; border-radius: 28px; overflow: hidden; background: var(--salvia); }
+.hacemos-foto img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; max-height: 58vh; object-fit: cover; object-position: center 85%; }
 .panes { list-style: none; padding: 0; border-top: 1.5px solid var(--oliva-osc); }
 .panes li { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--linea); }
 .panes .nombre { font-size: clamp(1.4rem, 2.6vw, 2rem); font-weight: 600; letter-spacing: -.02em; line-height: 1.2; }
@@ -141,6 +143,8 @@ h2 { font-size: clamp(2rem, 4.4vw, 3.25rem); line-height: 1.08; font-weight: 700
   .hacemos { padding-block: 72px; }
   .hacemos-grilla { grid-template-columns: 1fr; gap: 36px; }
   .hacemos-intro { position: static; }
+  .hacemos-foto { border-radius: 22px; }
+  .hacemos-foto img { aspect-ratio: 1 / 1; max-height: none; }
   .otras { grid-template-columns: 1fr; gap: 28px; margin-top: 40px; }
 }
 
