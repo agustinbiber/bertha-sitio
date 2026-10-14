@@ -24,8 +24,9 @@ body {
 }
 img, svg, iframe { display: block; max-width: 100%; }
 h1, h2, h3, p, ul, ol, dl, dd { margin: 0; }
-a { color: var(--oliva-osc); text-underline-offset: 3px; }
-a:hover { color: var(--tinta); }
+a { color: var(--oliva-osc); text-decoration: none; text-underline-offset: 3px; }
+a:hover { color: var(--tinta); text-decoration: underline; }
+.boton:hover, .pieza-final a:hover, .marca:hover { text-decoration: none; }
 :focus-visible { outline: 3px solid var(--corteza); outline-offset: 3px; border-radius: 6px; }
 
 .saltar { position: absolute; left: -9999px; top: 8px; z-index: 100; background: var(--oliva-osc); color: #fff; padding: 10px 16px; border-radius: 8px; }
@@ -269,6 +270,7 @@ h2 { font-size: clamp(2rem, 4.4vw, 3.25rem); line-height: 1.08; font-weight: 700
 .dato h3 { font-size: 15px; font-weight: 600; color: var(--suave); margin-bottom: 6px; }
 .dato address { font-style: normal; font-size: 21px; font-weight: 500; }
 .dato .enlace { display: inline-block; padding: 8px 0; font-weight: 500; }
+.dato .enlace::after { content: " →"; }
 .horarios { width: 100%; border-collapse: collapse; font-size: 17px; }
 .horarios th, .horarios td { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--linea); font-weight: 400; }
 .horarios th { padding-left: 0; }
