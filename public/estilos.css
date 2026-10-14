@@ -46,6 +46,8 @@ h2 { font-size: clamp(2rem, 4.4vw, 3.25rem); line-height: 1.08; font-weight: 700
 .boton:hover { background: var(--tinta); border-color: var(--tinta); color: var(--salvia); }
 .boton.contorno { background: transparent; color: var(--oliva-osc); }
 .boton.contorno:hover { background: var(--oliva-osc); color: var(--salvia); }
+.boton.pedidosya { background: #FA0050; border-color: #FA0050; color: #fff; }
+.boton.pedidosya:hover { background: #D10043; border-color: #D10043; color: #fff; }
 
 /* ── Cartel de la puerta ─────────────────────────── */
 .cartel {
@@ -154,6 +156,8 @@ h2 { font-size: clamp(2rem, 4.4vw, 3.25rem); line-height: 1.08; font-weight: 700
 .vitrina + .menu { padding-top: 40px; }
 .menu-cabecera { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 16px 32px; margin-bottom: 32px; }
 .menu-cabecera p { color: var(--suave); font-size: 15px; }
+.menu-acciones { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; }
+.menu-acciones .boton { min-height: 44px; padding: 8px 20px; font-size: 15px; }
 .pestanas { position: relative; display: inline-flex; gap: 4px; flex-wrap: wrap; margin-bottom: 28px; padding: 5px; border-radius: 999px; background: var(--papel); }
 .pestanas .indicador { position: absolute; left: 0; top: 0; border-radius: 999px; background: var(--oliva-osc); transition: transform .35s cubic-bezier(.3, .8, .3, 1), width .35s cubic-bezier(.3, .8, .3, 1); pointer-events: none; }
 @media (prefers-reduced-motion: reduce) { .pestanas .indicador { transition: none; } }
