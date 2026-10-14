@@ -244,6 +244,8 @@ h2 { font-size: clamp(2rem, 4.4vw, 3.25rem); line-height: 1.08; font-weight: 700
 @media (hover: hover) { .pieza:hover img { transform: scale(1.04); } }
 .pieza h3 { font-size: 21px; font-weight: 600; letter-spacing: -.01em; margin-top: 16px; }
 .pieza p { font-size: 15px; color: var(--suave); margin-top: 2px; }
+.pieza-video video { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 26px; background: var(--papel); }
+@media (max-width: 860px) { .pieza-video video { border-radius: 20px; } }
 .pieza-final a { display: flex; flex-direction: column; justify-content: space-between; height: 100%; aspect-ratio: 4 / 5; padding: 32px; border-radius: 26px; background: var(--oliva-osc); color: var(--salvia); text-decoration: none; transition: background .2s; }
 .pieza-final { align-self: flex-start; }
 .pieza-final a:hover { background: var(--tinta); color: var(--salvia); }
