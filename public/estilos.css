@@ -275,6 +275,11 @@ h2 { font-size: clamp(2rem, 4.4vw, 3.25rem); line-height: 1.08; font-weight: 700
 .dato address { font-style: normal; font-size: 21px; font-weight: 500; }
 .dato .enlace { display: inline-block; padding: 8px 0; font-weight: 500; }
 .dato .enlace::after { content: " →"; }
+.apps { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.apps a { display: block; padding: 10px 14px; border-radius: 14px; background: var(--papel); border: 1px solid var(--linea); color: var(--tinta); transition: border-color .2s, background .2s; }
+.apps a:hover { text-decoration: none; border-color: var(--oliva); background: #fff; }
+.apps strong { display: block; font-weight: 600; color: var(--oliva-osc); }
+.apps span { display: block; font-size: 14px; color: var(--suave); line-height: 1.45; }
 .horarios { width: 100%; border-collapse: collapse; font-size: 17px; }
 .horarios th, .horarios td { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--linea); font-weight: 400; }
 .horarios th { padding-left: 0; }
