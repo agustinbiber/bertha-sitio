@@ -109,9 +109,9 @@ h2 { font-size: clamp(2rem, 4.4vw, 3.25rem); line-height: 1.08; font-weight: 700
   .foto-portada .capa img { transform: scale(1.06); transition: transform 6.5s ease-out; }
   .foto-portada .capa.activa img { transform: scale(1); }
 }
-.puntos { position: absolute; z-index: 2; left: 14px; right: 14px; top: 10px; display: flex; gap: 6px; }
+.puntos { position: absolute; z-index: 2; left: 14px; right: 14px; top: 3px; display: flex; gap: 6px; }
 .foto-portada::before { content: ""; position: absolute; z-index: 2; inset: 0 0 auto; height: 72px; background: linear-gradient(rgba(43, 48, 32, .38), transparent); pointer-events: none; }
-.puntos button { flex: 1; height: 30px; padding: 0; border: 0; background: none; cursor: pointer; display: grid; place-items: center; }
+.puntos button { flex: 1; height: 44px; padding: 0; border: 0; background: none; cursor: pointer; display: grid; place-items: center; }
 .puntos span { display: block; width: 100%; height: 3px; border-radius: 3px; background: rgba(250, 250, 245, .45); position: relative; overflow: hidden; }
 .puntos span::after { content: ""; position: absolute; inset: 0; background: var(--papel); transform: scaleX(0); transform-origin: left; }
 .puntos [aria-current="true"] span::after { transform: scaleX(1); }
@@ -291,7 +291,7 @@ h2 { font-size: clamp(2rem, 4.4vw, 3.25rem); line-height: 1.08; font-weight: 700
 .pie .contenedor { display: grid; grid-template-columns: auto 1fr auto; gap: 24px 48px; align-items: center; }
 .pie img { width: 132px; height: auto; filter: brightness(0) invert(.93) sepia(.1); }
 .pie p { font-size: 15px; color: #D6D9C8; }
-.pie a { color: var(--salvia); }
+.pie a { color: var(--salvia); display: inline-block; padding: 10px 0; }
 @media (max-width: 760px) { .pie .contenedor { grid-template-columns: 1fr; } }
 
 /* ── Botón flotante (celular) ────────────────────── */
