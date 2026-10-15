@@ -140,6 +140,10 @@ h2 { font-size: clamp(2rem, 4.4vw, 3.25rem); line-height: 1.08; font-weight: 700
 .novedad-texto h2 { font-size: clamp(2rem, 4vw, 3rem); }
 .nuevo { display: inline-block; padding: 6px 14px; border-radius: 999px; background: var(--corteza); color: #fff; font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
 .novedad-texto .botones { margin-top: 8px; }
+.novedad-precios { list-style: none; margin: 0; padding: 0; width: min(100%, 320px); }
+.novedad-precios li { display: flex; justify-content: space-between; gap: 16px; padding: 8px 0; border-bottom: 1px solid var(--linea); font-weight: 500; }
+.novedad-precios li span:last-child { font-variant-numeric: tabular-nums; color: var(--oliva-osc); font-weight: 600; }
+.etiqueta-nuevo { display: inline-block; margin-left: 6px; padding: 1px 8px; border-radius: 999px; background: var(--corteza); color: #fff; font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; vertical-align: 2px; }
 @media (max-width: 860px) {
   .novedades { padding-block: 0 64px; }
   .novedad { grid-template-columns: 1fr; gap: 22px; padding: 16px 16px 26px; border-radius: 26px; }
