@@ -1,0 +1,706 @@
+{
+ "secciones": [
+  {
+   "categoria": "Promos y combos",
+   "productos": [
+    {
+     "nombre": "Pebeté tostado (promo x2)",
+     "precio": 180
+    },
+    {
+     "nombre": "Empanadas promo x4",
+     "precio": 350
+    },
+    {
+     "nombre": "Desayuno tostadas + cafe",
+     "precio": 350
+    },
+    {
+     "nombre": "Desayuno café + croissant relleno",
+     "precio": 350
+    },
+    {
+     "nombre": "Merienda para 2 (opción 1 - tostado)",
+     "precio": 1100
+    },
+    {
+     "nombre": "Tostadas + dips",
+     "precio": 200
+    },
+    {
+     "nombre": "Desayuno café + 2 medialunas",
+     "precio": 350
+    },
+    {
+     "nombre": "Dip adicional",
+     "precio": 40
+    },
+    {
+     "nombre": "Merienda para 2 (opción 2 - croissant)",
+     "precio": 1100
+    },
+    {
+     "nombre": "Tarta + guarnición ensalada",
+     "precio": 375
+    }
+   ]
+  },
+  {
+   "categoria": "Cafetería",
+   "productos": [
+    {
+     "nombre": "Café capuccino",
+     "precio": 200
+    },
+    {
+     "nombre": "Café cortado",
+     "precio": 180
+    },
+    {
+     "nombre": "Café espresso doble",
+     "precio": 180
+    },
+    {
+     "nombre": "Café latte",
+     "precio": 200
+    },
+    {
+     "nombre": "Adicional leche avena",
+     "precio": 45
+    },
+    {
+     "nombre": "Café espresso",
+     "precio": 140
+    },
+    {
+     "nombre": "Colet 250 ml",
+     "precio": 80
+    },
+    {
+     "nombre": "Café americano",
+     "precio": 180
+    },
+    {
+     "nombre": "Café flat white",
+     "precio": 200
+    },
+    {
+     "nombre": "Bebida té ceylan",
+     "precio": 140
+    },
+    {
+     "nombre": "Jugo de naranja natural",
+     "precio": 200
+    },
+    {
+     "nombre": "Café iced capuccino",
+     "precio": 210
+    },
+    {
+     "nombre": "Café long black",
+     "precio": 180
+    },
+    {
+     "nombre": "Café vainilla latte",
+     "precio": 220
+    },
+    {
+     "nombre": "Café iced latte",
+     "precio": 210
+    },
+    {
+     "nombre": "Bebida té inti zen",
+     "precio": 140
+    },
+    {
+     "nombre": "Chocolaté caliente",
+     "precio": 200
+    },
+    {
+     "nombre": "Café moccachino",
+     "precio": 210
+    },
+    {
+     "nombre": "Café lagrima",
+     "precio": 160
+    },
+    {
+     "nombre": "Café macchiato",
+     "precio": 160
+    },
+    {
+     "nombre": "Leche vaso",
+     "precio": 40
+    },
+    {
+     "nombre": "Café iced coffe",
+     "precio": 210
+    },
+    {
+     "nombre": "Shot adicional café",
+     "precio": 40
+    },
+    {
+     "nombre": "Matcha latte",
+     "precio": 200
+    },
+    {
+     "nombre": "Opción syrup adicional",
+     "precio": 20
+    },
+    {
+     "nombre": "Café ristretto",
+     "precio": 140
+    },
+    {
+     "nombre": "Café tonic",
+     "precio": 200
+    },
+    {
+     "nombre": "Café tonic",
+     "precio": 210
+    },
+    {
+     "nombre": "Matcha té original",
+     "precio": 180
+    }
+   ]
+  },
+  {
+   "categoria": "Almuerzos",
+   "productos": [
+    {
+     "nombre": "Pascualina",
+     "precio": 275
+    },
+    {
+     "nombre": "Empanadas",
+     "precio": 100
+    },
+    {
+     "nombre": "Fondue en pan de campo",
+     "precio": 1750
+    },
+    {
+     "nombre": "Ensalada guarnición",
+     "precio": 250
+    },
+    {
+     "nombre": "Tabla picada 5 personas",
+     "precio": 1950
+    },
+    {
+     "nombre": "Tabla picada 8 personas",
+     "precio": 2800
+    },
+    {
+     "nombre": "Tortilla de papa porción",
+     "precio": 275
+    },
+    {
+     "nombre": "Tortilla grande 2 kilos",
+     "precio": 250
+    }
+   ]
+  },
+  {
+   "categoria": "Sándwiches",
+   "productos": [
+    {
+     "nombre": "Medialuna rellena jamón y queso",
+     "precio": 180
+    },
+    {
+     "nombre": "Sandwich pan nuez",
+     "precio": 180
+    },
+    {
+     "nombre": "Croissant relleno jamón y queso",
+     "precio": 210
+    },
+    {
+     "nombre": "Ciabatta mediterránea",
+     "precio": 380
+    },
+    {
+     "nombre": "Sandwich olímpico brioche",
+     "precio": 320
+    },
+    {
+     "nombre": "Focaccia mortadela",
+     "precio": 380
+    },
+    {
+     "nombre": "Tostado pan de campo",
+     "precio": 200
+    },
+    {
+     "nombre": "Croissant relleno bondiola",
+     "precio": 250
+    },
+    {
+     "nombre": "Medialuna rellena bondiola",
+     "precio": 200
+    },
+    {
+     "nombre": "Pebeté tostado",
+     "precio": 180
+    },
+    {
+     "nombre": "Chipa relleno jamón y queso",
+     "precio": 150
+    },
+    {
+     "nombre": "Scon relleno de jamón y queso",
+     "precio": 180
+    },
+    {
+     "nombre": "Baguettin relleno",
+     "precio": 150
+    },
+    {
+     "nombre": "Ciabatta vegetariana",
+     "precio": 380
+    },
+    {
+     "nombre": "Focaccia caprese",
+     "precio": 380
+    },
+    {
+     "nombre": "Mini pebeté relleno",
+     "precio": 60
+    }
+   ]
+  },
+  {
+   "categoria": "Pastelería",
+   "productos": [
+    {
+     "nombre": "Cookie ny choco chips",
+     "precio": 120
+    },
+    {
+     "nombre": "Cookie choco belga",
+     "precio": 140
+    },
+    {
+     "nombre": "Alfajor clásico",
+     "precio": 160
+    },
+    {
+     "nombre": "Galletitas de avena y miel",
+     "precio": 150
+    },
+    {
+     "nombre": "Alfajor de maicena",
+     "precio": 140
+    },
+    {
+     "nombre": "Cookie lemon",
+     "precio": 140
+    },
+    {
+     "nombre": "Cuadrado de limón",
+     "precio": 140
+    },
+    {
+     "nombre": "Carrot cake",
+     "precio": 210
+    },
+    {
+     "nombre": "Alfacookie",
+     "precio": 220
+    },
+    {
+     "nombre": "Brownie",
+     "precio": 190
+    },
+    {
+     "nombre": "Cheese cake cookie",
+     "precio": 140
+    },
+    {
+     "nombre": "Crumble de manzana",
+     "precio": 210
+    },
+    {
+     "nombre": "Galletitas de canela y azúcar",
+     "precio": 150
+    },
+    {
+     "nombre": "Brookie",
+     "precio": 220
+    },
+    {
+     "nombre": "Espejito",
+     "precio": 150
+    },
+    {
+     "nombre": "Cuadrado de coco y dulce de leche",
+     "precio": 190
+    },
+    {
+     "nombre": "Galletitas lemon sable",
+     "precio": 150
+    },
+    {
+     "nombre": "Tarta escondida pera",
+     "precio": 210
+    },
+    {
+     "nombre": "Budín banana y choco belga",
+     "precio": 210
+    },
+    {
+     "nombre": "Torta ricota y membrillo",
+     "precio": 190
+    }
+   ]
+  },
+  {
+   "categoria": "Bollería",
+   "productos": [
+    {
+     "nombre": "Mini medialuna",
+     "precio": 50
+    },
+    {
+     "nombre": "Medialuna",
+     "precio": 100
+    },
+    {
+     "nombre": "Croissant",
+     "precio": 120
+    },
+    {
+     "nombre": "Scon queso",
+     "precio": 110
+    },
+    {
+     "nombre": "Margarita",
+     "precio": 100
+    },
+    {
+     "nombre": "Roll de canela",
+     "precio": 140
+    },
+    {
+     "nombre": "Pain au chocolat",
+     "precio": 140
+    },
+    {
+     "nombre": "Roll de queso",
+     "precio": 140
+    },
+    {
+     "nombre": "Roll de chocolate",
+     "precio": 160
+    },
+    {
+     "nombre": "Danesa de frutos rojos",
+     "precio": 140
+    },
+    {
+     "nombre": "Croissant de queso",
+     "precio": 140
+    },
+    {
+     "nombre": "Croissant almendrado",
+     "precio": 160
+    },
+    {
+     "nombre": "Monkey bread",
+     "precio": 140
+    },
+    {
+     "nombre": "Choco almendrado",
+     "precio": 160
+    },
+    {
+     "nombre": "Choco pistacho",
+     "precio": 230
+    },
+    {
+     "nombre": "Adicional frosting",
+     "precio": 20
+    }
+   ]
+  },
+  {
+   "categoria": "Bebidas",
+   "productos": [
+    {
+     "nombre": "Agua salus sin gas",
+     "precio": 90
+    },
+    {
+     "nombre": "Agua salus con gas",
+     "precio": 90
+    },
+    {
+     "nombre": "Pomelo light paso de los toros 600 ml",
+     "precio": 110
+    },
+    {
+     "nombre": "Coca cola regular 250 ml",
+     "precio": 60
+    },
+    {
+     "nombre": "Coca cola light 250 ml",
+     "precio": 60
+    },
+    {
+     "nombre": "Coca cola zero 250 ml",
+     "precio": 60
+    },
+    {
+     "nombre": "Coca cola zero 600 ml",
+     "precio": 110
+    },
+    {
+     "nombre": "Salus frutté naranja durazno light",
+     "precio": 90
+    },
+    {
+     "nombre": "Coca cola light 600 ml",
+     "precio": 110
+    },
+    {
+     "nombre": "Salus frutté mango y naranja light",
+     "precio": 90
+    },
+    {
+     "nombre": "Salus frutté light edición especial",
+     "precio": 90
+    },
+    {
+     "nombre": "Coca cola regular 600 ml",
+     "precio": 110
+    },
+    {
+     "nombre": "Salus frutté manzana verde light",
+     "precio": 90
+    },
+    {
+     "nombre": "Pomelo paso de los toros 600 ml",
+     "precio": 110
+    },
+    {
+     "nombre": "Salus frutté manzana roja c/azúcar",
+     "precio": 90
+    },
+    {
+     "nombre": "Salus frutté naranja light",
+     "precio": 90
+    },
+    {
+     "nombre": "Salus frutté pomelo light",
+     "precio": 90
+    },
+    {
+     "nombre": "Tónica schweppes 250",
+     "precio": 60
+    },
+    {
+     "nombre": "Salus frutté pomelo c/azúcar",
+     "precio": 90
+    },
+    {
+     "nombre": "Salus frutté c/azúcar ediciones especial",
+     "precio": 90
+    },
+    {
+     "nombre": "Salus frutté naranja c/azúcar",
+     "precio": 90
+    },
+    {
+     "nombre": "Salus frutté manzana uva c/azúcar",
+     "precio": 90
+    },
+    {
+     "nombre": "Tónica light paso de los toros 600 ml",
+     "precio": 110
+    },
+    {
+     "nombre": "Tónica paso de los toros 600 ml",
+     "precio": 110
+    },
+    {
+     "nombre": "Vermouth amado",
+     "precio": 560
+    }
+   ]
+  },
+  {
+   "categoria": "Panadería",
+   "productos": [
+    {
+     "nombre": "Buns",
+     "precio": 35
+    },
+    {
+     "nombre": "Mini buns con topping",
+     "precio": 30
+    },
+    {
+     "nombre": "Chipa",
+     "precio": 100
+    },
+    {
+     "nombre": "Mini buns",
+     "precio": 25
+    },
+    {
+     "nombre": "Chivito",
+     "precio": 50
+    },
+    {
+     "nombre": "Buns con topping",
+     "precio": 40
+    },
+    {
+     "nombre": "Campo blanco",
+     "precio": 250
+    },
+    {
+     "nombre": "Pre pizza",
+     "precio": 130
+    },
+    {
+     "nombre": "Crackers integrales 150 g",
+     "precio": 150
+    },
+    {
+     "nombre": "Campo integral",
+     "precio": 270
+    },
+    {
+     "nombre": "Ciabatta",
+     "precio": 80
+    },
+    {
+     "nombre": "Lactal integral",
+     "precio": 270
+    },
+    {
+     "nombre": "Campo mini blanco",
+     "precio": 140
+    },
+    {
+     "nombre": "Baguettin",
+     "precio": 40
+    },
+    {
+     "nombre": "Campo mini integral",
+     "precio": 160
+    },
+    {
+     "nombre": "Campo mini integral + semillas",
+     "precio": 170
+    },
+    {
+     "nombre": "Pan jala dulce",
+     "precio": 350
+    },
+    {
+     "nombre": "Baguette",
+     "precio": 120
+    },
+    {
+     "nombre": "Campo mini integral + pasas y nueces",
+     "precio": 170
+    },
+    {
+     "nombre": "Lactal pan brioche",
+     "precio": 250
+    },
+    {
+     "nombre": "Pan jala salada",
+     "precio": 350
+    },
+    {
+     "nombre": "Campo mini maiz + semillas zapallo",
+     "precio": 170
+    },
+    {
+     "nombre": "Lactal blanco",
+     "precio": 250
+    },
+    {
+     "nombre": "Campo blanco 750 g",
+     "precio": 210
+    },
+    {
+     "nombre": "Focaccia",
+     "precio": 270
+    },
+    {
+     "nombre": "Crackers integrales (chapa)",
+     "precio": 600
+    },
+    {
+     "nombre": "Pan nuez entero",
+     "precio": 450
+    },
+    {
+     "nombre": "Campo grande especial",
+     "precio": 300
+    },
+    {
+     "nombre": "Pan jala chocolate",
+     "precio": 450
+    },
+    {
+     "nombre": "Campo integral molde",
+     "precio": 270
+    },
+    {
+     "nombre": "Grisines integrales (kg)",
+     "precio": 1000
+    },
+    {
+     "nombre": "Grisines integrales 200 g",
+     "precio": 200
+    },
+    {
+     "nombre": "Mini chivito",
+     "precio": 40
+    },
+    {
+     "nombre": "Pan catalan",
+     "precio": 40
+    },
+    {
+     "nombre": "Pan pancho vienna (papa)",
+     "precio": 30
+    }
+   ]
+  },
+  {
+   "categoria": "Café en grano",
+   "productos": [
+    {
+     "nombre": "Café fecafé organico seis montes 250 g",
+     "precio": 680
+    },
+    {
+     "nombre": "Café bildimoo seis montes 250 g",
+     "precio": 1040
+    },
+    {
+     "nombre": "Café gikanda seis montes 250 g",
+     "precio": 1120
+    },
+    {
+     "nombre": "Café gran galope seis montes 250 g",
+     "precio": 690
+    },
+    {
+     "nombre": "Café halo seis montes 250 g",
+     "precio": 1050
+    }
+   ]
+  }
+ ],
+ "actualizado": "2026-10-15T00:06"
+}

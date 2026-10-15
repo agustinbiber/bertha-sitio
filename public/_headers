@@ -10,3 +10,6 @@
 
 /video/*
   Cache-Control: public, max-age=2592000
+
+/carta/carta.json
+  Cache-Control: public, max-age=300
