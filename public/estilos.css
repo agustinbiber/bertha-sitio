@@ -63,6 +63,11 @@ h2 { font-size: clamp(2rem, 4.4vw, 3.25rem); line-height: 1.08; font-weight: 700
 .cartel strong { font-weight: 700; }
 
 /* ── Encabezado ──────────────────────────────────── */
+/* Saludo de un día (Día del Panadero): banda arriba de todo, se muestra solo esa fecha */
+.saludo { margin: 0; padding: 10px 24px; background: var(--oliva-osc); color: var(--salvia); text-align: center; font-size: 15px; line-height: 1.45; }
+.saludo strong { color: #fff; font-weight: 600; }
+.saludo[hidden] { display: none; }
+@media (max-width: 640px) { .saludo { font-size: 14px; padding: 9px 16px; } .saludo span { display: block; } }
 .encabezado { position: sticky; top: 0; z-index: 50; background: rgba(237, 239, 228, .92); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid transparent; transition: border-color .2s; }
 .encabezado.con-borde { border-bottom-color: var(--linea); }
 .nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 68px; }
